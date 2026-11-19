@@ -1,0 +1,12 @@
+.item {
+  width: 100%;
+}
+
+.card {
+  flex-direction: column;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}

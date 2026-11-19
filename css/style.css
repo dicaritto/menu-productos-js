@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f7f6;
+}
+
+.menu-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.formulario-menu {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+
+/* Tarjeta horizontal: imagen a la izquierda, textos a la derecha */
+.card {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  border-radius: 12px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);
+}
+
+.card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Contenedor de textos a la derecha */
+.container {
+  padding: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Nombre del producto */
+.container h4 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Precio destacado */
+.container p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #008ec0;
+  background-color: #e6f7fd;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Ancho de la tarjeta */
+.item {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Estilo boton */
+.btn {
+  height: 34px;
+  padding: 0 20px;
+  background: #00abe7;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #008ec0;
+}
